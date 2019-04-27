@@ -46,6 +46,22 @@
 
 ---
 
+## Required Programs
+PHP 5.5 or newer
+MySQL
+
+
+---
+
+## To run server
+open  MYSQL serve
+open  public directory in terminal or  cmd 
+php -S localhost:8080
+
+in  browser type 
+http://localhost:8080/api/token
+
+
 ## Thanks [Mr.Ramy Hakam](https://github.com/Z-Team-Pro)
 
 ---
