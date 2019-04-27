@@ -47,8 +47,8 @@
 ---
 
 ## Required Programs
-PHP 5.5 or newer
-MySQL
+- PHP 5.5 or newer
+- MySQL
 
 
 ---
