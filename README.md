@@ -12,6 +12,7 @@
 	- __construct
 	- __destruct
 	- __invoke
+	- __get
 - inheritance
 - overriding functions
 
