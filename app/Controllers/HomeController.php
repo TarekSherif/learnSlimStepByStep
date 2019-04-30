@@ -12,11 +12,17 @@ class HomeController extends Controller
 {
     public function index(Request $request, Response $response, $args)
     {
-        $userList= $this->c->mysqli->getList("select * from user",\fetchType::fetch_array);
+        $userList= $this->mysqli->getList("select * from user",\fetchType::fetch_array);
    //  return $res->withJson($userList,200);   Error in slim3 UTF8 
       return $response
                ->withHeader("Content-Type", "application/json")
                ->write(json_encode($userList, JSON_UNESCAPED_UNICODE),200);
+
+    }
+     public function hello(Request $request, Response $response, $args)
+    {
+       
+      return $this->view->render($response,"hello.twig");
 
     }
 }

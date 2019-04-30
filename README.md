@@ -3,16 +3,11 @@
 ---
 
 **1.OOP**
+
 - namespace
-- Class
-	- abstract class 
-	- final class
+- Class - abstract class - final class
 - Object instance
-- Magic Methods
-	- __construct
-	- __destruct
-	- __invoke
-	- __get
+- Magic Methods - **construct - **destruct - **invoke - **get
 - inheritance
 - overriding functions
 
@@ -34,7 +29,11 @@
 
 **7.Environment Variable**
 
----
+**8.View twig**
+
+- template inheritance (layout)
+- Block
+- partials templates
 
 ## Dependency used
 
@@ -44,24 +43,25 @@
 - composer require tuupola/slim-basic-auth
 - composer require tuupola/slim-jwt-auth
 - composer require firebase/php-jwt
+- composer require slim/twig-view
 
 ---
 
 ## Required Programs
+
 - PHP 5.5 or newer
 - MySQL
-
 
 ---
 
 ## To run server
-open  MYSQL serve
-open  public directory in terminal or  cmd 
+
+open MYSQL serve
+open public directory in terminal or cmd
 php -S localhost:8080
 
-in  browser type 
+in browser type
 http://localhost:8080/api/token
-
 
 ## Thanks [Mr.Ramy Hakam](https://github.com/Z-Team-Pro)
 

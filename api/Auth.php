@@ -7,7 +7,7 @@ $app->get("/api/token", function ($request, $response, $arguments) {
     $JWT=$this->JWT;
 
     $now = new DateTime();
-    $future = new DateTime("now +10 minutes");
+    $future = new DateTime("now +30 minutes");
     // $server = $request->getServerParams();
     $payload = [
         "iat" => $now->getTimeStamp(),

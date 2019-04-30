@@ -11,7 +11,7 @@ abstract class Controller
      *
      * @var \Interop\Container\ContainerInterface
      */
-    protected $c;
+    protected $container;
 
     /**
      * Set up controllers to have access to the container.
@@ -20,6 +20,12 @@ abstract class Controller
      */
     public function __construct(ContainerInterface $container)
     {
-        $this->c = $container;
+        $this->container = $container;
+    }
+
+    public function __get( $property)
+    {
+        if($this->container->{$property})
+        return $this->container->{$property};
     }
 }
