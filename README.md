@@ -36,6 +36,8 @@
 - Block
 - partials templates
 
+**9.Models**
+
 ## Dependency used
 
 - composer require slim/slim

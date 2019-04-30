@@ -1,8 +1,10 @@
 <?php
 
 namespace App\Controllers;
-use DB;
+ 
 use App\Controllers\Controller;
+use App\Models\User;
+
 use Psr\Http\Message\{
     ServerRequestInterface as Request,
     ResponseInterface as Response
@@ -21,7 +23,8 @@ class HomeController extends Controller
     }
      public function hello(Request $request, Response $response, $args)
     {
-      $users=$this->DB->table("user")->find(1);
+      // $users=$this->DB->table("user")->find(1);
+      $users=User::find(1);
       var_dump($users);
        die();
 
