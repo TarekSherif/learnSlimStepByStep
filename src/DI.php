@@ -3,13 +3,19 @@ use \Firebase\JWT\JWT;
 
 $container=$app->getContainer();
 
-$container["JWT"]= function ($container)
-{
-   $JWT=new JWT();
-   return $JWT;
-};
+$capsule=new Illuminate\Database\Capsule\Manager();
+$capsule->addConnection($container['settings']['database']);
+$capsule->setAsGlobal();
+$capsule->bootEloquent();
 
-$container["mysqli"]= function ($container)
+
+
+// DB
+$container["DB"]= function ($container)use($capsule)
+{
+     return $capsule;
+};
+$container["mysqli"]= function ($container) 
 {
   $dbConfig=$container['settings']['database'];
   $dbMsqliObj = new dbMysqli($dbConfig);
@@ -37,10 +43,16 @@ $container->request->getUri()
   
 };
 
+
+// Controllers
 $container["HomeController"]= function ($container)
 {
   $HomeController=new \App\Controllers\HomeController($container);
- 
   return  $HomeController;
-  
+};
+// Auth
+$container["JWT"]= function ($container)
+{
+   $JWT=new JWT();
+   return $JWT;
 };

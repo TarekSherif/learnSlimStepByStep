@@ -21,7 +21,10 @@ class HomeController extends Controller
     }
      public function hello(Request $request, Response $response, $args)
     {
-       
+      $users=$this->DB->table("user")->find(1);
+      var_dump($users);
+       die();
+
       return $this->view->render($response,"hello.twig");
 
     }

@@ -17,6 +17,7 @@
 
 - PDO
 - MYSQL
+- Eloquent
 
 **4.Dependency injection**
 
@@ -44,6 +45,7 @@
 - composer require tuupola/slim-jwt-auth
 - composer require firebase/php-jwt
 - composer require slim/twig-view
+- composer require illuminate/database
 
 ---
 

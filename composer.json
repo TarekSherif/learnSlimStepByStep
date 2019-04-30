@@ -14,7 +14,8 @@
     "tuupola/slim-jwt-auth": "^3.3",
     "firebase/php-jwt": "^5.0",
     "monolog/monolog": "^1.24",
-    "slim/twig-view": "^2.5"
+    "slim/twig-view": "^2.5",
+    "illuminate/database": "^5.8"
   },
   "autoload": {
     "psr-4": {
