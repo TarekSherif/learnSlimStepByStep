@@ -5,9 +5,15 @@
 **1.OOP**
 
 - namespace
-- Class - abstract class - final class
+- Class 
+  - abstract class 
+  - final class
 - Object instance
-- Magic Methods - **construct - **destruct - **invoke - **get
+- Magic Methods 
+  - **construct 
+  - **destruct 
+  - **invoke 
+  - **get
 - inheritance
 - overriding functions
 
@@ -37,6 +43,10 @@
 - partials templates
 
 **9.Models**
+**10.Helper Tools**
+  - travis-ci
+  - phing
+  -
 
 ## Dependency used
 
