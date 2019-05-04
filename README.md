@@ -46,7 +46,7 @@
 **10.Helper Tools**
   - travis-ci
   - phing
-  -
+  - slack
 
 ## Dependency used
 
